@@ -30,5 +30,19 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left"> <ul><li><a href=''>NOT FOUND</a></ul></li></td>
       <td align="left">2017</td>   
     </tr>
+    <tr>
+      <td><a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href=''>Tensorflow</a></ul></li></td>
+      <td align="left">2018</td>   
+    </tr>
+    <tr>
+      <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href=''>NOT finish</a></ul></li></td>
+      <td align="left">2018</td>   
+    </tr>
   </tbody>
 </table>
