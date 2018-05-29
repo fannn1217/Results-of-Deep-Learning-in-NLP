@@ -10,9 +10,10 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
   <tbody>
     <tr>
       <th width="30%">Research Paper</th>
-      <th align="center" width="20%">Datasets</th>
-      <th align="center" width="20%">Metric</th>
-      <th align="center" width="20%">Source Code</th>
+      <th align="center" width="10%">Datasets</th>
+      <th align="center" width="10%">Metric</th>
+      <th align="center" width="10%">Source Code</th>
+      <th align="center" width="10%">Published</th>
       <th align="center" width="10%">Year</th>
       <th align="center" width="20%">Reading Note</th>
     </tr>
@@ -21,27 +22,31 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">Yelp</td>
       <td align="left">Accuracy: 68.6</td>
       <td align="left"> <ul><li><a href=''>NOT FOUND</a></ul></li></td>
-      <td align="left">2017</td>    
+      <td align="left">TACL</td> 
+      <td align="left">2018</td>    
     </tr>
     <tr>
       <td><a href='https://arxiv.org/pdf/1710.00519.pdf'>Attentive Convolution</a></td>
       <td align="left">Yelp</td>
       <td align="left">Accuracy: 67.36</td>
       <td align="left"> <ul><li><a href=''>NOT FOUND</a></ul></li></td>
+      <td align="left"></td> 
       <td align="left">2017</td>   
     </tr>
     <tr>
       <td><a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
-      <td align="left"> <ul><li><a href=''>Tensorflow</a></ul></li></td>
+      <td align="left"> <ul><li><a href='https://github.com/guoyinwang/LEAM'>Tensorflow</a></ul></li></td>
+      <td align="left">ACL</td> 
       <td align="left">2018</td>   
     </tr>
     <tr>
       <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
-      <td align="left"> <ul><li><a href=''>NOT finish</a></ul></li></td>
+      <td align="left"> <ul><li><a href='https://github.com/wangshy31/Densely-Connected-CNN-with-Multiscale-Feature-Attention'>NOT finish</a></ul></li></td>
+      <td align="left">IJCAI</td> 
       <td align="left">2018</td>   
     </tr>
   </tbody>
