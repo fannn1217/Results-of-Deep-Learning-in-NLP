@@ -2,8 +2,6 @@
 
 UPDATE:18-5-30
 
----
-
 State of the art  results for  machine learning problems in NLP and CV, basically used deep learning methods.
 Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source Code, Year and Notes.
 
