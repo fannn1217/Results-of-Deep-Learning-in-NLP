@@ -1,8 +1,10 @@
-# State-of-the-art-results-of-NLP
-State of the art  results for  machine learning problems in NLP, basically used deep learning methods.
+# State-of-the-art-results-of-Deep-Learning
+State of the art  results for  machine learning problems in NLP and CV, basically used deep learning methods.
 Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source Code, Year and Notes.
 
-一些NLP最新结果，包括论文，数据集，评估结果，源代码，年份以及阅读笔记。
+一些NLP & CV最新结果，包括论文，数据集，评估结果，源代码，年份以及阅读笔记。
+
+# NLP
 
 ## Text Classification 文本分类
 
