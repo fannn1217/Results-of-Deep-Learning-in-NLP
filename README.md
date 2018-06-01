@@ -12,6 +12,7 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 # NLP
 
 ## Text Classification 文本分类
+![image](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP-CV/blob/master/image/Text_Classification.png)
 
 <table>
   <tbody>
