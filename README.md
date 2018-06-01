@@ -64,5 +64,14 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">IJCAI</td> 
       <td align="left">2018</td>   
     </tr>
+    <tr>
+      <td><a href='https://arxiv.org/abs/1704.05742'>Adversarial Multi-task Learning for Text Classification</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href='http://pfliu.com/paper/adv-mtl.html'>Theano</a></ul></li></td>
+      <td align="left">ACL</td> 
+      <td align="left">2017</td> 
+      <td align="left"><a href='https://blog.csdn.net/qj8380078/article/details/79914170'>CSDN</a></td>
+    </tr>
   </tbody>
 </table>
