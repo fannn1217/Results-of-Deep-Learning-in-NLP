@@ -49,6 +49,14 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2018</td>   
     </tr>
     <tr>
+      <td><a href='https://arxiv.org/abs/1508.00200'>PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href='https://github.com/mnqu/PTE'>Code</a></ul></li></td>
+      <td align="left">KDD</td> 
+      <td align="left">2015</td>   
+    </tr>
+    <tr>
       <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
