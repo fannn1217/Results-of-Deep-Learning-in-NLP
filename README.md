@@ -74,5 +74,15 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2017</td> 
       <td align="left"><a href='https://blog.csdn.net/qj8380078/article/details/79914170'>CSDN</a></td>
     </tr>
+    <tr>
+      <td><a href='https://arxiv.org/abs/1710.10393'>
+Label Embedding Network: Learning Label Representation for Soft Training of Deep Networks</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href='https://github.com/lancopku/label-embedding-network'>Pytorch+Tensorflow</a></ul></li></td>
+      <td align="left">arxiv</td> 
+      <td align="left">2017.10</td> 
+      <td align="left"><a href=''></a></td>
+    </tr>
   </tbody>
 </table>
