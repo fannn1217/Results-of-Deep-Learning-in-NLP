@@ -86,3 +86,11 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
     </tr>
   </tbody>
 </table>
+
+* **PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks** KDD(2015)
+  [[paper](https://arxiv.org/abs/1508.00200)]
+  [[github](https://github.com/mnqu/PTE)]
+  
+  目标是学习针对给定文本分类任务进行优化的文本表示。基本思想是在学习文本嵌入时将标记和未标记的信息结合起来。为了达到这个目的，首先需要有一个统一的表示来编码这两种信息。本文提出了实现这个目标的不同类型的网络，包括词 - 词共现网络，词 - 文档网络和词 - 标签网络，将三种网络结合起来，通过最小化经验分布函数，学习到单词的向量表示，平均单词的向量表示即可获得文本表示，进而完成文本分类任务。
+
+
