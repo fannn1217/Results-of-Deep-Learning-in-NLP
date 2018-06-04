@@ -108,5 +108,6 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
 * “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
   [[paper](https://arxiv.org/abs/1710.07210)]
   [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
+  
 将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
 
