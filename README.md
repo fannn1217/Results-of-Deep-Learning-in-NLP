@@ -24,6 +24,8 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 
 
 
+
+
 <table>
   <tbody>
     <tr>
@@ -52,7 +54,7 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2017.10</td>   
     </tr>
     <tr>
-      <td><a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
+      <td>LEAM：<a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
       <td align="left"> <ul><li><a href='https://github.com/guoyinwang/LEAM'>Tensorflow</a></ul></li></td>
@@ -97,7 +99,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   </tbody>
 </table>
 
-* **PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks** KDD(2015)
+* **PTE** “PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks” **KDD(2015)**
   [[paper](https://arxiv.org/abs/1508.00200)]
   [[github](https://github.com/mnqu/PTE)]
   
