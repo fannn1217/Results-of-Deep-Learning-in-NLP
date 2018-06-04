@@ -105,7 +105,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   
 目标是学习针对给定文本分类任务进行优化的文本表示。基本思想是在学习文本嵌入时将标记和未标记的信息结合起来。为了达到这个目的，首先需要有一个统一的表示来编码这两种信息。本文提出了实现这个目标的不同类型的网络，包括词 - 词共现网络，词 - 文档网络和词 - 标签网络，将三种网络结合起来，通过最小化经验分布函数（距离），学习到单词的向量表示，平均单词的向量表示即可获得文本表示，进而完成文本分类任务。
 
-* “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
+* **MTLE** “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
   [[paper](https://arxiv.org/abs/1710.07210)]
   [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
   
