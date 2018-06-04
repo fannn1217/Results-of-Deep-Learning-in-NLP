@@ -34,12 +34,12 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2018</td>    
     </tr>
     <tr>
-      <td><a href='https://arxiv.org/pdf/1710.00519.pdf'>Attentive Convolution</a></td>
+      <td><a href='https://arxiv.org/abs/1710.00519'>Attentive Convolution</a></td>
       <td align="left">Yelp</td>
       <td align="left">Accuracy: 67.36</td>
-      <td align="left"> <ul><li><a href=''>NOT FOUND</a></ul></li></td>
-      <td align="left"></td> 
-      <td align="left">2017</td>   
+      <td align="left"> <ul><li><a href='https://github.com/yinwenpeng/Attentive_Convolution'>Theano</a></ul></li></td>
+      <td align="left">arxiv</td> 
+      <td align="left">2017.10</td>   
     </tr>
     <tr>
       <td><a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
