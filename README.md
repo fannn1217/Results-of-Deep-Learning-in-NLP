@@ -18,10 +18,10 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 - `Deep Learning`: deep learning features, deep learning method and RL.
 
 
-|   Paper   | Yahoo | DBPedia | AGNews | Yelp P. | Yelp F. | ---- | Deep Learning |  RealTime  |
+|   Paper   | Yahoo | DBPedia | AGNews | Yelp P. | Yelp F. | Amazon P. | Amazon F. | Deep Learning |  RealTime  |
 | :---------: | :----------: | :----------------: | :--------: | :--------------: | :-------: | :-------------: | :-----------: | :--------: |
-|     LEAM     |  *77.42*   |        **99.02**        |    *92.45*     |  *95.31*  |     *64.09*     |      --       |       Y       |    --    |
-|     Region.Emb.     |     |        *98.9*        |    **92.8**     |  **96.4**  |     **64.9**     |      --       |       Y       |    --    |
+|     LEAM     |  *77.42*   |        **99.02**        |    *92.45*     |  *95.31*  |     *64.09*     |      --       |      --       |       Y       |    --    |
+|     Region.Emb.     |     |        *98.9*        |    **92.8**     |  **96.4**  |     **64.9**     |      *95.1*       |      *60.9*       |       Y       |    --    |
 
 
 
@@ -110,4 +110,11 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
   
 将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
+
+* **Region.Emb.** * "A New Method Of Region Embedding For Text Classification" **ICLR(2018)**
+  [[paper](https://openreview.net/pdf?id=BkSDMA36Z)]
+  [[github(Pytorch)](https://github.com/schelotto/Region_Embedding_Text_Classification_Pytorch)]
+  [[reading note](https://zhuanlan.zhihu.com/p/39264740)]
+  
+
 
