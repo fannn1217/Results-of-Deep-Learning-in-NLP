@@ -12,6 +12,9 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 # NLP
 
 ## Text Classification 文本分类
+
+[[综述参考-用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)]
+
 ![image](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP-CV/blob/master/image/Text_Classification.png)
 
 - `Accuracy` are the standard metrics.
@@ -111,10 +114,12 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   
 将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
 
-* **Region.Emb.** * "A New Method Of Region Embedding For Text Classification" **ICLR(2018)**
+* **Region.Emb.**  "A New Method Of Region Embedding For Text Classification" **ICLR(2018)**
   [[paper](https://openreview.net/pdf?id=BkSDMA36Z)]
   [[github(Pytorch)](https://github.com/schelotto/Region_Embedding_Text_Classification_Pytorch)]
+  [[github(Tensorflow)](https://github.com/text-representation/local-context-unit)]
   [[reading note](https://zhuanlan.zhihu.com/p/39264740)]
   
+
 
 
