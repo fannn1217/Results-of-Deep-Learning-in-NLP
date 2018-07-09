@@ -65,14 +65,6 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2018</td>   
     </tr>
     <tr>
-      <td><a href='https://arxiv.org/abs/1508.00200'>PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks</a></td>
-      <td align="left"></td>
-      <td align="left"></td>
-      <td align="left"> <ul><li><a href='https://github.com/mnqu/PTE'>Code</a></ul></li></td>
-      <td align="left">KDD</td> 
-      <td align="left">2015</td>   
-    </tr>
-    <tr>
       <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
@@ -113,6 +105,11 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
   
 将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
+
+* **LEAM** “Joint Embedding of Words and Labels for Text Classification” **ACL(2018)**
+  [[paper](https://arxiv.org/pdf/1805.04174.pdf)]
+  [[github(Tensorflow)](https://github.com/guoyinwang/LEAM)]
+  
 
 * **Region.Emb.**  "A New Method Of Region Embedding For Text Classification" **ICLR(2018)**
   [[paper](https://openreview.net/pdf?id=BkSDMA36Z)]
