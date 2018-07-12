@@ -86,7 +86,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   </tbody>
 </table>
 
-###Embedding
+### `Embedding`
 
 * **PTE** “PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks” **KDD(2015)**
   [[paper](https://arxiv.org/abs/1508.00200)]
@@ -108,7 +108,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   
 针对文本分类，本文提出了一种n-gram新的分布式表示——region embedding。在模型中，单词由两部分表示 1单词本身的embedding 2 联系上下文的权重矩阵。
 
-###多任务
+### `多任务`
 
 * **MTLE** “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
   [[paper](https://arxiv.org/abs/1710.07210)]
@@ -116,7 +116,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   
 将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
 
-* **** “Recurrent Neural Network for Text Classification with Multi-Task Learning” **IJCAI（2016）**
+*  “Recurrent Neural Network for Text Classification with Multi-Task Learning” **IJCAI（2016）**
   [[paper](http://www.ijcai.org/Proceedings/16/Papers/408.pdf)]
   [[reading note](https://zhuanlan.zhihu.com/p/27562717?refer=xitucheng10)]
   
