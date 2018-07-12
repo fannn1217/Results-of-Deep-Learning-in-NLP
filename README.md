@@ -1,6 +1,6 @@
 # State-of-the-art-results-of-Deep-Learning
 
-UPDATE:18-6-4
+UPDATE:18-7-12
 
 State of the art  results for  machine learning problems in NLP and CV, basically used deep learning methods.
 Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source Code, Year and Notes.
@@ -57,14 +57,6 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left">2017.10</td>   
     </tr>
     <tr>
-      <td>LEAM：<a href='https://arxiv.org/pdf/1805.04174.pdf'>Joint Embedding of Words and Labels for Text Classification</a></td>
-      <td align="left"></td>
-      <td align="left"></td>
-      <td align="left"> <ul><li><a href='https://github.com/guoyinwang/LEAM'>Tensorflow</a></ul></li></td>
-      <td align="left">ACL</td> 
-      <td align="left">2018</td>   
-    </tr>
-    <tr>
       <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
       <td align="left"></td>
       <td align="left"></td>
@@ -110,6 +102,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[paper](https://arxiv.org/pdf/1805.04174.pdf)]
   [[github(Tensorflow)](https://github.com/guoyinwang/LEAM)]
   
+将文本分类视为标签 - 词联合嵌入问题：每个标签与词向量嵌入在同一空间中。贡献：利用attention机制 联合利用标签embedding 
 
 * **Region.Emb.**  "A New Method Of Region Embedding For Text Classification" **ICLR(2018)**
   [[paper](https://openreview.net/pdf?id=BkSDMA36Z)]
@@ -117,6 +110,7 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[github(Tensorflow)](https://github.com/text-representation/local-context-unit)]
   [[reading note](https://zhuanlan.zhihu.com/p/39264740)]
   
+针对文本分类，本文提出了一种n-gram新的分布式表示——region embedding。在模型中，单词由两部分表示 1单词本身的embedding 2 联系上下文的权重矩阵。
 
 
 
