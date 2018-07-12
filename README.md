@@ -86,17 +86,13 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   </tbody>
 </table>
 
+###Embedding
+
 * **PTE** “PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks” **KDD(2015)**
   [[paper](https://arxiv.org/abs/1508.00200)]
   [[github](https://github.com/mnqu/PTE)]
   
 目标是学习针对给定文本分类任务进行优化的文本表示。基本思想是在学习文本嵌入时将标记和未标记的信息结合起来。为了达到这个目的，首先需要有一个统一的表示来编码这两种信息。本文提出了实现这个目标的不同类型的网络，包括词 - 词共现网络，词 - 文档网络和词 - 标签网络，将三种网络结合起来，通过最小化经验分布函数（距离），学习到单词的向量表示，平均单词的向量表示即可获得文本表示，进而完成文本分类任务。
-
-* **MTLE** “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
-  [[paper](https://arxiv.org/abs/1710.07210)]
-  [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
-  
-将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
 
 * **LEAM** “Joint Embedding of Words and Labels for Text Classification” **ACL(2018)**
   [[paper](https://arxiv.org/pdf/1805.04174.pdf)]
@@ -112,5 +108,17 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   
 针对文本分类，本文提出了一种n-gram新的分布式表示——region embedding。在模型中，单词由两部分表示 1单词本身的embedding 2 联系上下文的权重矩阵。
 
+###多任务
 
+* **MTLE** “Multi-Task Label Embedding for Text Classification” **Arxiv（2017.10）**
+  [[paper](https://arxiv.org/abs/1710.07210)]
+  [[reading note](https://zhuanlan.zhihu.com/p/37669263)]
+  
+将文本分类中的标签转换为语义向量，从而将原始任务转换为向量匹配任务。实现了多任务标签嵌入的无监督，监督和半监督模型，所有这些模型都利用了任务之间的语义相关性。
+
+* **** “Recurrent Neural Network for Text Classification with Multi-Task Learning” **IJCAI（2016）**
+  [[paper](http://www.ijcai.org/Proceedings/16/Papers/408.pdf)]
+  [[reading note](https://zhuanlan.zhihu.com/p/27562717?refer=xitucheng10)]
+  
+针对文本多分类任务，提出了基于RNN的三种不同的共享信息机制对具有特定任务和文本进行建模，在四个基准的文本分类任务中取得了较好的结果。
 
