@@ -121,4 +121,9 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[reading note](https://zhuanlan.zhihu.com/p/27562717?refer=xitucheng10)]
   
 针对文本多分类任务，提出了基于RNN的三种不同的共享信息机制对具有特定任务和文本进行建模，在四个基准的文本分类任务中取得了较好的结果。
+三种model：Uniform-Layer Architecture、Coupled-Layer Architecture、Shared-Layer Architecture
 
+*  “A Generalized Recurrent Neural Architecturefor Text Classification with Multi-Task Learning” **IJCAI（2017）**
+  [[paper](http://www.ijcai.org/proceedings/2017/0473.pdf)]
+  
+上一篇文章的后续工作，提出了一个通用的架构，将三种layer结合起来。每个任务都拥有一个基于LSTM的single layer，用于任务内学习。Pair-wise Coupling layer和local fusion layer设计用于直接和间接的任务间交互。利用global fusion layer来维护全局内存，以便在所有任务之间共享信息
