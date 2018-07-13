@@ -137,5 +137,6 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
 * **Dense.CNN** “Densely Connected CNN with Multi-scale Feature Attention for Text Classification” **IJCAI(2018)**
   [[paper](http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf)]
   [[github](https://github.com/wangshy31/Densely-Connected-CNN-with-Multiscale-Feature-Attention)]
+  [[reading note](https://zhuanlan.zhihu.com/p/39704684)]
   
 传统的CNN有固定的卷积核大小，无法在CNN模型中自适应地选择多尺度特征进行文本分类。收到DenseNet启发，本文提出了一种新的CNN模型，该模型在卷积层之间具有密集连接，并具有多尺度特征注意机制。通过这两个设计考虑因素，该模型能够自适应地选择用于文本分类的多尺度特征。
