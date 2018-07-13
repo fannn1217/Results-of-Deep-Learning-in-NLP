@@ -21,11 +21,11 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 - `Deep Learning`: deep learning features, deep learning method and RL.
 
 
-|   Paper   | Yahoo | DBPedia | AGNews | Yelp P. | Yelp F. | Amazon P. | Amazon F. | Deep Learning |  RealTime  |
-| :---------: | :----------: | :----------: | :--------: | :-----------: | :-------: | :-----------: | :-----------: | :--------: | :--------: |
-|     LEAM     |  *77.42*   |        **99.02**        |    *92.45*     |  *95.31*  |     *64.09*     |      --       |      --       |       Y       |    --    |
-|     Region.Emb.     |        --       |      *98.9*        |    **92.8**     |  **96.4**  |     **64.9**     |      *95.1*       |      *60.9*       |       Y       |    --    |
-
+|   Paper   | Yahoo | DBPedia | AGNews | Yelp P. | Yelp F. | Amazon P. | Amazon F. | Deep Learning | 
+| :---------: | :----------: | :----------: | :--------: | :-----------: | :-------: | :-----------: | :-----------: | :--------: |
+|     LEAM     |  *77.42*   |        *99.02*        |    *92.45*     |  *95.31*  |     *64.09*     |      --       |      --       |       Y       | 
+|     Region.Emb.     |        --       |      *98.9*        |    *92.8*     |  *96.4*  |     *64.9*     |      *95.1*       |      *60.9*       |       Y       |  
+|     Dense.CNN     |      --     |        **99.2**        |    **93.6**     |  **96.5**  |     **66.0**     |      --       |      **63.0**       |       Y       |
 
 
 
@@ -55,14 +55,6 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
       <td align="left"> <ul><li><a href='https://github.com/yinwenpeng/Attentive_Convolution'>Theano</a></ul></li></td>
       <td align="left">arxiv</td> 
       <td align="left">2017.10</td>   
-    </tr>
-    <tr>
-      <td><a href='http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf'>Densely Connected CNN with Multi-scale Feature Attention for Text Classification</a></td>
-      <td align="left"></td>
-      <td align="left"></td>
-      <td align="left"> <ul><li><a href='https://github.com/wangshy31/Densely-Connected-CNN-with-Multiscale-Feature-Attention'>NOT finish</a></ul></li></td>
-      <td align="left">IJCAI</td> 
-      <td align="left">2018</td>   
     </tr>
     <tr>
       <td><a href='https://arxiv.org/abs/1704.05742'>Adversarial Multi-task Learning for Text Classification</a></td>
@@ -127,3 +119,11 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
   [[paper](http://www.ijcai.org/proceedings/2017/0473.pdf)]
   
 上一篇文章的后续工作，提出了一个通用的架构，将三种layer结合起来。每个任务都拥有一个基于LSTM的single layer，用于任务内学习。Pair-wise Coupling layer和local fusion layer设计用于直接和间接的任务间交互。利用global fusion layer来维护全局内存，以便在所有任务之间共享信息
+
+### `CNN`
+
+* **Dense.CNN** “Densely Connected CNN with Multi-scale Feature Attention for Text Classification” **IJCAI(2018)**
+  [[paper](http://coai.cs.tsinghua.edu.cn/hml/media/files/2018wangshiyao_DenselyCNN.pdf)]
+  [[github](https://github.com/wangshy31/Densely-Connected-CNN-with-Multiscale-Feature-Attention)]
+  
+传统的CNN有固定的卷积核大小，无法在CNN模型中自适应地选择多尺度特征进行文本分类。收到DenseNet启发，本文提出了一种新的CNN模型，该模型在卷积层之间具有密集连接，并具有多尺度特征注意机制。通过这两个设计考虑因素，该模型能够自适应地选择用于文本分类的多尺度特征。
