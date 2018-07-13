@@ -28,7 +28,7 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 |     Dense.CNN     |      --     |        **99.2**        |    **93.6**     |  **96.5**  |     **66.0**     |      --       |      **63.0**       |       Y       |
 
 
-
+`待看：`
 <table>
   <tbody>
     <tr>
@@ -75,8 +75,20 @@ Label Embedding Network: Learning Label Representation for Soft Training of Deep
       <td align="left">2017.10</td> 
       <td align="left"><a href=''></a></td>
     </tr>
+    <tr>
+      <td><a href='http://www.cse.ust.hk/~yqsong/papers/2018-WWW-Text-GraphCNN.pdf'>
+Large-Scale Hierarchical Text Classification with Recursively Regularized Deep Graph-CNN</a></td>
+      <td align="left"></td>
+      <td align="left"></td>
+      <td align="left"> <ul><li><a href='https://github.com/HKUST-KnowComp/DeepGraphCNNforTexts'>Tensorflow</a></ul></li></td>
+      <td align="left">WWW</td> 
+      <td align="left">2018</td> 
+      <td align="left"><a href=''></a></td>
+    </tr>
   </tbody>
 </table>
+
+`已看`
 
 ### `Embedding`
 
