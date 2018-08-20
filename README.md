@@ -2,16 +2,16 @@
 
 UPDATE:18-7-12
 
-State of the art  results for  machine learning problems in NLP and CV, basically used deep learning methods.
+State of the art  results for  machine learning problems in NLP, basically used deep learning methods.
 Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source Code, Year and Notes.
 
-一些NLP & CV最新结果，包括论文，数据集，评估结果，源代码，年份以及阅读笔记。
+一些NLP最新结果，包括论文，数据集，评估结果，源代码，年份以及阅读笔记。
 
 ---
 
 # NLP
 
-## Text Classification 文本分类
+## Text Classification 
 
 [[综述参考-用深度学习（CNN RNN Attention）解决大规模文本分类问题 - 综述和实践](https://zhuanlan.zhihu.com/p/25928551)]
 
@@ -140,3 +140,24 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
   [[reading note](https://zhuanlan.zhihu.com/p/39704684)]
   
 传统的CNN有固定的卷积核大小，无法在CNN模型中自适应地选择多尺度特征进行文本分类。收到DenseNet启发，本文提出了一种新的CNN模型，该模型在卷积层之间具有密集连接，并具有多尺度特征注意机制。通过这两个设计考虑因素，该模型能够自适应地选择用于文本分类的多尺度特征。
+
+## Sequence 2 Sequence
+
+### `Transformer`
+
+* **Transformer**  “Attention is All You Need”  **NIPS(2017)**
+  [[paper](https://arxiv.org/pdf/1706.03762.pdf)]
+  [[pytorch](https://github.com/jadore801120/attention-is-all-you-need-pytorch)]
+  [[keras](https://github.com/Lsdefine/attention-is-all-you-need-keras)]
+  [[tensorflow](https://github.com/Kyubyong/transformer)]
+  [[reading note](https://zhuanlan.zhihu.com/p/27469958)]
+  
+神经翻译的文章，抛弃了传统Encoder-Decoder中经典的卷积和循环结构，仅保留了attention，实现了并行计算。在Encoder层中，模型用了一个Multi-head self-attention以及一个全连接前馈网络，而在Decoder层中除了以上两部分之外又加入了一个对Encoder的attention层。从细节上来讲，attention层以及FCN都是残差链接并且在输出端进行了一次LayerNorm。
+
+* “Improving Language Understanding by Generative Pre-Training” 
+  [[paper](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)]
+  [[github](https://github.com/openai/finetune-transformer-lm)]
+  [[guide](https://finetune.indico.io/#)]
+  
+标注数据稀少，对无标记的数据进行pre-train是一种提高模型效果的方法。本文使用transformer（decoder only）在无标记语料上进行预训练language model，之后经过模型的fine-tuning，实现对QA，语义相似度，分类等任务的效果提升。
+  
