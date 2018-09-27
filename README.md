@@ -9,7 +9,6 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 
 ---
 
-# NLP
 
 ## Text Classification 
 
@@ -141,7 +140,15 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
   
 传统的CNN有固定的卷积核大小，无法在CNN模型中自适应地选择多尺度特征进行文本分类。收到DenseNet启发，本文提出了一种新的CNN模型，该模型在卷积层之间具有密集连接，并具有多尺度特征注意机制。通过这两个设计考虑因素，该模型能够自适应地选择用于文本分类的多尺度特征。
 
-## Sequence 2 Sequence
+### `Pre-train`
+
+* **ULMFiT** “Universal Language Model Fine-tuning for Text Classification” **ACL(2018)**
+  [[paper](https://arxiv.org/abs/1801.06146)]
+  [[code](http://nlp.fast.ai/ulmfit)]
+  [[reading note](https://www.jianshu.com/p/5b680f4fb2f2)]
+
+
+## Sequence2Sequence
 
 ### `Transformer`
 
