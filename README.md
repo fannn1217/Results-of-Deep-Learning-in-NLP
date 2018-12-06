@@ -186,6 +186,9 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
 * **LSTMs**  “Sentence Compression by Deletion with LSTMs” **EMNLP（2015）**
   [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
 
+*  “Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains” **ACL（2017）**
+  [[paper](http://www.aclweb.org/anthology/P17-1127)]
+  [[github](https://github.com/cnap/sentence-compression)]
 
 *   “A Language Model based Evaluator for Sentence Compression” **ACL（2018）**
   [[paper](https://aclweb.org/anthology/P18-2028)]
