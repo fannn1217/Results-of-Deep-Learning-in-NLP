@@ -176,3 +176,10 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
   [[reading note](https://www.jiqizhixin.com/articles/2018-10-12-13)]
   
 不同于GPT等方法（预训练语言模型后微调），本文使用多层双向 Transformer 编码器，不使用传统的从左到右或从右到左的语言模型来预训练 BERT，而是使用两个新型无监督预测任务来进行预训练。这两个新任务分别是Masked LM 和下一句预测。实验表明，BERT 刷新了 11 项 NLP 任务的当前最优性能记录。
+
+
+## Sentence Compression
+
+* **LSTMs**  “Sentence Compression by Deletion with LSTMs” **（2015）**
+  [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
+
