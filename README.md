@@ -197,5 +197,12 @@ Large-Scale Hierarchical Text Classification with Recursively Regularized Deep G
   
 基于删除的句子压缩旨在从源句中删除不必要的单词以形成短句，同时保证符合语法规范和遵循源句的基本含义。 以前的工作使用基于机器学习的方法或基于句法树的方法来产生最具可读性和信息量的压缩结果。然而使用RNN作为模型仍然会产生不合语法的句子，原因在于RNN的优化目标是基于单个词而不是整个压缩句子， 优化目标和评估之间存在差异。 因此，本文提出了以下两点改进：（i）将整个压缩句子的可读性作为学习目标;（ii）构建基于语言模型的评估器，用以恢复语法错误
   
+*   “Unsupervised Sentence Compression using Denoising Auto-Encoders” **CoNLL（2018）**
+  [[paper](https://arxiv.org/abs/1809.02669)]
+  [[reading note](https://zhuanlan.zhihu.com/p/52521973)]
   
+为了弥补语料的缺乏问题，本文采用DAE作为策略，构建端到端的无监督模型，专注抽取式方法。
+
+
   
+
