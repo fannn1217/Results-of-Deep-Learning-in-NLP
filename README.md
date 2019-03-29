@@ -28,21 +28,21 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 |     Dense.CNN     |      --     |        **99.2**        |    **93.6**     |  **96.5**  |     **66.0**     |      --       |      **63.0**       |       Y       |
 
 
-* :full_moon_with_face: [Text Classification](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Text_Classification.md)
+:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Text_Classification.md)
 
 ## Sequence2Sequence 
 
-* :full_moon_with_face: [Sequence2Sequence](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Sequence2Sequence.md)
+:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Sequence2Sequence.md)
 
 ## Pre-train 
 
-* :full_moon_with_face: [Pre-train](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Pre-train.md)
+:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Pre-train.md)
 
 ## Text Summarization 
 
-* :full_moon_with_face: [Text Summarization](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Sentence_Compression.md)
+:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Sentence_Compression.md)
 
-* :full_moon_with_face: [Dataset](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Dataset_of_text_summarization.md)
+:full_moon_with_face: [Dataset](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Dataset_of_text_summarization.md)
 
 
 
