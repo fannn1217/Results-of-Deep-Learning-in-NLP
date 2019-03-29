@@ -40,7 +40,7 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 
 ## Text Summarization 
 
-:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Sentence_Compression.md)
+:full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Text_Summarization.md)
 
 :full_moon_with_face: [Dataset](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Dataset_of_text_summarization.md)
 
