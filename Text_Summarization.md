@@ -1,4 +1,4 @@
-## Sentence Compression
+## Text Summarization
 
 * **LSTMs**  “Sentence Compression by Deletion with LSTMs” **EMNLP（2015）**
   [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
