@@ -1,6 +1,6 @@
 ## Text Summarization
 
-**`Sentence Compression`**
+**`Extraction`**
 
 * **LSTMs**  “Sentence Compression by Deletion with LSTMs” **EMNLP（2015）**
   [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
@@ -21,6 +21,8 @@
   [[reading note](https://zhuanlan.zhihu.com/p/52521973)]
   
 为了弥补语料的缺乏问题，本文采用DAE作为策略，构建端到端的无监督模型，专注抽取式方法。
+
+**`Abstraction`**
 
 * **ABS** "A Neural Attention Model for Abstractive Sentence Summarization" **EMNLP (Rush, 2015)**
   [[paper](https://arxiv.org/abs/1509.00685)]
