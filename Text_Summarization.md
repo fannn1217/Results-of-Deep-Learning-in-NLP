@@ -28,3 +28,11 @@
   [[paper](https://arxiv.org/abs/1509.00685)]
   [[github](https://github.com/facebookarchive/NAMAS)]
 
+* **Read-Again** "Efficient summarization with read-again and copy mechanism" **(Zeng, 2016)**
+  [[paper](https://arxiv.org/pdf/1611.03382v1.pdf)]
+  [[note](https://zhuanlan.zhihu.com/p/24887544)]
+  
+Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器翻译、文本摘要等。作者提出它还存在一些缺点，比如Encoder侧在计算一个词的表示的时候只考虑了在其之前读到的词；还有，Decoder侧普遍用很大的词表来解决OOV（Out Of Vocabulary）的问题，从而导致解码缓慢。作者提出了对应的两个方法来解决这两个问题，一个就是Read-Again，即在产生词的表示之前预先“读”一遍句子，再就是作者提出“copy”机制，利用很小的词表来处理OOV问题，并且取得了state of art的效果。
+
+
+  
