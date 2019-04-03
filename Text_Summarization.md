@@ -1,22 +1,34 @@
 ## Text Summarization
 
-**`Extraction`**
+**`Extraction (deletion-based)（word level）`**
 
 * **LSTMs**  “Sentence Compression by Deletion with LSTMs” **EMNLP（2015）**
   [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
+  序列标注的思路
+  提出了一种deletion-based LSTM方法，其任务是将句子转换为零和1的序列，对应于token删除决策。
+  
+* “Improving sentence compression by learning to predict gaze” **ACL（2016) **
+  [[github](https://github.com/tatsuokun/sentence_compression)]
 
-*  “Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains” **ACL（2017）**
+* “Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains” **ACL（2017）**
   [[paper](http://www.aclweb.org/anthology/P17-1127)]
   [[github](https://github.com/cnap/sentence-compression)]
 
-*   “A Language Model based Evaluator for Sentence Compression” **ACL（2018）**
+* “A Language Model based Evaluator for Sentence Compression” **ACL（2018）**
   [[paper](https://aclweb.org/anthology/P18-2028)]
   [[github](https://github.com/code4conference/code4sc)]
   [[reading note](https://zhuanlan.zhihu.com/p/50378570)]
   
 基于删除的句子压缩旨在从源句中删除不必要的单词以形成短句，同时保证符合语法规范和遵循源句的基本含义。 以前的工作使用基于机器学习的方法或基于句法树的方法来产生最具可读性和信息量的压缩结果。然而使用RNN作为模型仍然会产生不合语法的句子，原因在于RNN的优化目标是基于单个词而不是整个压缩句子， 优化目标和评估之间存在差异。 因此，本文提出了以下两点改进：（i）将整个压缩句子的可读性作为学习目标;（ii）构建基于语言模型的评估器，用以恢复语法错误
   
-*   “Unsupervised Sentence Compression using Denoising Auto-Encoders” **CoNLL（2018）**
+**`Extraction (限定词典生成问题)（word level）`**
+
+* **NN-WE/NN-SE** “Neural Summarization by Extracting Sentences and Words” **ACL (2016) **
+[[paper](https://www.aclweb.org/anthology/P16-1046)]
+
+本文针对的任务分为sentence和word两个level的summarization。sentence level是一个序列标签问题，每个句子有0或1两个标签。而word level则是一个限定词典规模下的生成问题，词典规模限定为原文档中所有出现的词。使用的模型也比较有特点，首先在encoder端将document分为word和sentence来encode，word使用CNN encode得到句子表示，接着将句子表示输入RNN得到encoder端隐藏层状态。从word到sentence的encode体现了本文的hierarchical document encoder的概念。
+
+* “Unsupervised Sentence Compression using Denoising Auto-Encoders” **CoNLL（2018）**
   [[paper](https://arxiv.org/abs/1809.02669)]
   [[reading note](https://zhuanlan.zhihu.com/p/52521973)]
   
