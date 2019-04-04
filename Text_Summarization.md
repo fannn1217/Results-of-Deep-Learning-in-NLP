@@ -4,6 +4,7 @@
 
 * **LSTMs**  “Sentence Compression by Deletion with LSTMs” **EMNLP（2015）**
   [[paper](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/43852.pdf)]
+  
   序列标注的思路
   提出了一种deletion-based LSTM方法，其任务是将句子转换为零和1的序列，对应于token删除决策。
   
@@ -20,6 +21,11 @@
   [[reading note](https://zhuanlan.zhihu.com/p/50378570)]
   
 基于删除的句子压缩旨在从源句中删除不必要的单词以形成短句，同时保证符合语法规范和遵循源句的基本含义。 以前的工作使用基于机器学习的方法或基于句法树的方法来产生最具可读性和信息量的压缩结果。然而使用RNN作为模型仍然会产生不合语法的句子，原因在于RNN的优化目标是基于单个词而不是整个压缩句子， 优化目标和评估之间存在差异。 因此，本文提出了以下两点改进：（i）将整个压缩句子的可读性作为学习目标;（ii）构建基于语言模型的评估器，用以恢复语法错误
+
+* **HiSAN** “Higher-order Syntactic Attention Network for Long Sentence Compression” **NAACL（2018）**
+[[reading note](https://zhuanlan.zhihu.com/p/53954265)]
+
+在句子压缩任务中，神经网络方法已经成为主流研究方向，然而在面对长句子时效果不佳，本文提出了HiSAN，把higher-order dependency features作为attention。另外，为了弥补句法树的解析错误，将attention和最大化概率作为共同的训练目标。
   
 **`Extraction (限定词典生成问题)（word level）`**
 
@@ -38,6 +44,13 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
   [[reading note](https://zhuanlan.zhihu.com/p/52521973)]
   
 为了弥补语料的缺乏问题，本文采用DAE作为策略，构建端到端的无监督模型，专注抽取式方法。
+
+**`Extraction（sentence level）`**
+
+* **SummaRuNNer** “SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents” **AAAI（2017）**
+[[github](https://arxiv.org/abs/1611.04230)]
+
+提出了一个基于序列分类器的循环神经网络模型：SummaRuNNer，该模型表述简单，可解释性强，提出新的训练机制：使用生成式摘要(abstractive summary)的模式来训练抽取式任务
 
 **`Abstraction`**
 
