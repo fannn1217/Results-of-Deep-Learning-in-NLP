@@ -1,4 +1,4 @@
-## Text Summarization
+# Text Summarization
 
 **`Extraction (deletion-based)（word level）`**
 
@@ -26,6 +26,8 @@
 [[reading note](https://zhuanlan.zhihu.com/p/53954265)]
 
 在句子压缩任务中，神经网络方法已经成为主流研究方向，然而在面对长句子时效果不佳，本文提出了HiSAN，把higher-order dependency features作为attention。另外，为了弥补句法树的解析错误，将attention和最大化概率作为共同的训练目标。
+
+***
   
 **`Extraction (限定词典生成问题)（word level）`**
 
@@ -45,12 +47,16 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
   
 为了弥补语料的缺乏问题，本文采用DAE作为策略，构建端到端的无监督模型，专注抽取式方法。
 
+***
+
 **`Extraction（sentence level）`**
 
 * **SummaRuNNer** “SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents” **AAAI（2017）**
 [[github](https://arxiv.org/abs/1611.04230)]
 
 提出了一个基于序列分类器的循环神经网络模型：SummaRuNNer，该模型表述简单，可解释性强，提出新的训练机制：使用生成式摘要(abstractive summary)的模式来训练抽取式任务
+
+***
 
 **`Abstraction`**
 
@@ -84,14 +90,12 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 [[reading note](https://zhuanlan.zhihu.com/p/58985964)]
 
 句子压缩会压缩句子，同时保留其最重要的内容。 基于删除的模型具有删除冗余单词的能力，而基于生成的模型能够对单词进行重新排序。 本文提出了operation network，一种用于抽象句子压缩的方法，它结合了基于删除和基于生成的句子压缩模型的优点。
-
 在Pointer-Generator network的基础上，添加了delete decoder，对attention重新分布，同样是1.在词汇表上的概率分布，2.在输入序列上的概率分布，这两部分的概率加和得到最终的预测结果。
 
 * “Generating topic-oriented summaries using neural attention” **NAACL（2018）**
 [[reading note](https://zhuanlan.zhihu.com/p/60324533)]
 
 一篇文章可以涵盖几个topic，本文以生成针对不同主题的摘要为目标，将一篇文章与感兴趣的主题作为输入。由于缺少包含多个面向主题的文本摘要的数据集，本文从CNN / Dailymail数据集中人为构建语料。
-
 模型采用Pointer-Generator network。将topic vector和input embedding concat起来作为输入句。
 
 
