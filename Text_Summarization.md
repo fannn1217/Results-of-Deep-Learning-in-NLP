@@ -80,7 +80,19 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 一方面通过seq2seq模型保持抽象生成的能力，另一方面通过pointer network直接从原文中取词，提高摘要的准确度和缓解OOV问题。
 在预测的每一步，通过动态计算一个生成概率，把二者软性地结合起来
   
+* **OperationNet** “An Operation Network for Abstractive Sentence Compression” **COLING（2018）**
+[[reading note](https://zhuanlan.zhihu.com/p/58985964)]
 
+句子压缩会压缩句子，同时保留其最重要的内容。 基于删除的模型具有删除冗余单词的能力，而基于生成的模型能够对单词进行重新排序。 本文提出了operation network，一种用于抽象句子压缩的方法，它结合了基于删除和基于生成的句子压缩模型的优点。
+
+在Pointer-Generator network的基础上，添加了delete decoder，对attention重新分布，同样是1.在词汇表上的概率分布，2.在输入序列上的概率分布，这两部分的概率加和得到最终的预测结果。
+
+* “Generating topic-oriented summaries using neural attention” **NAACL（2018）**
+[[reading note](https://zhuanlan.zhihu.com/p/60324533)]
+
+一篇文章可以涵盖几个topic，本文以生成针对不同主题的摘要为目标，将一篇文章与感兴趣的主题作为输入。由于缺少包含多个面向主题的文本摘要的数据集，本文从CNN / Dailymail数据集中人为构建语料。
+
+模型采用Pointer-Generator network。将topic vector和input embedding concat起来作为输入句。
 
 
 
