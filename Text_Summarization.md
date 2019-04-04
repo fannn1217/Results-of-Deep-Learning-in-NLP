@@ -54,7 +54,20 @@ ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解�
   
 Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器翻译、文本摘要等。作者提出它还存在一些缺点，比如Encoder侧在计算一个词的表示的时候只考虑了在其之前读到的词；还有，Decoder侧普遍用很大的词表来解决OOV（Out Of Vocabulary）的问题，从而导致解码缓慢。作者提出了对应的两个方法来解决这两个问题，一个就是Read-Again，即在产生词的表示之前预先“读”一遍句子，再就是作者提出“copy”机制，利用很小的词表来处理OOV问题，并且取得了state of art的效果。
 
+* **Copy-net** "Incorporating Copying Mechanism in Sequence-to-Sequence Learning" **ACL（2016）**
+[[reading note](https://zhuanlan.zhihu.com/p/48959800)]
+
+和Pointer-Generator Networks很像。
+模型包含两个部分：Generation-Mode用来根据词汇表生成词汇，然后Copy-Mode用来直接复制输入序列中的一些词。1.在词汇表上的概率分布，2.在输入序列上的概率分布，将这两部分的概率进行加和即得到最终的预测结果。
+
 * **Pointer-Generator network** “Get To The Point: Summarization with Pointer-Generator Networks” **ACL（2017）**
+[[reading note](https://zhuanlan.zhihu.com/p/27272224)]
 
-
+把sequence-to-sequence模型应用于生成摘要时存在两个主要的问题：（1）难以准确复述原文的事实细节、无法处理原文中的未登录词(OOV)；（2）生成的摘要中存在重复的片段。针对这两个问题，本文提出融合了seq2seq模型和pointer network的pointer-generator network以及覆盖率机制(coverage mechanism)
+一方面通过seq2seq模型保持抽象生成的能力，另一方面通过pointer network直接从原文中取词，提高摘要的准确度和缓解OOV问题。
+在预测的每一步，通过动态计算一个生成概率，把二者软性地结合起来
   
+
+
+
+
