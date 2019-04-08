@@ -20,6 +20,7 @@
   [[github](https://github.com/code4conference/code4sc)]
   [[reading note](https://zhuanlan.zhihu.com/p/50378570)]
   
+强化学习（无监督的方法）
 基于删除的句子压缩旨在从源句中删除不必要的单词以形成短句，同时保证符合语法规范和遵循源句的基本含义。 以前的工作使用基于机器学习的方法或基于句法树的方法来产生最具可读性和信息量的压缩结果。然而使用RNN作为模型仍然会产生不合语法的句子，原因在于RNN的优化目标是基于单个词而不是整个压缩句子， 优化目标和评估之间存在差异。 因此，本文提出了以下两点改进：（i）将整个压缩句子的可读性作为学习目标;（ii）构建基于语言模型的评估器，用以恢复语法错误
 
 * **HiSAN** “Higher-order Syntactic Attention Network for Long Sentence Compression” **NAACL（2018）**
@@ -81,6 +82,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 
 * **Pointer-Generator network** “Get To The Point: Summarization with Pointer-Generator Networks” **ACL（2017）**
 [[reading note](https://zhuanlan.zhihu.com/p/27272224)]
+[[github](https://github.com/becxer/pointer-generator/)]
 
 把sequence-to-sequence模型应用于生成摘要时存在两个主要的问题：（1）难以准确复述原文的事实细节、无法处理原文中的未登录词(OOV)；（2）生成的摘要中存在重复的片段。针对这两个问题，本文提出融合了seq2seq模型和pointer network的pointer-generator network以及覆盖率机制(coverage mechanism)
 一方面通过seq2seq模型保持抽象生成的能力，另一方面通过pointer network直接从原文中取词，提高摘要的准确度和缓解OOV问题。
