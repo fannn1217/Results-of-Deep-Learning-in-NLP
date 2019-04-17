@@ -85,13 +85,20 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解码出一个词的时候，不仅考虑神经网络对当前词的预测概率 logp(yi+1|x,yc;θ)，还要开个窗口，去找一找当前窗口内的词是否在原文中出现过，如果有的话，概率会变大。
 
 * “Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond” **CoNLL (Nallapati，2016)**
+[[paper](https://arxiv.org/abs/1602.06023)]
 
 （1）在两种不同数据集上应用seq2seq+attention的模型，得到了state-of-the-art结果。
+
 （2）根据摘要问题的特点提出了针对性的模型，结果更优。
-	• LVT词汇表限制
-	• 本文使用了一些额外的features，比如：词性，命名实体标签，单词的TF和IDF。将features融入到了word embedding上
-  • Switching Generator/Pointer：模型中decoder带有一个开关，如果开关状态是打开generator，则生成一个单词；如果是关闭，decoder则生成一个原文单词位置的指针，然后拷贝到摘要中。
-	• Hierarchical Encoder with Hieratchical Attention
+
+• LVT词汇表限制
+
+• 本文使用了一些额外的features，比如：词性，命名实体标签，单词的TF和IDF。将features融入到了word embedding上
+
+• Switching Generator/Pointer：模型中decoder带有一个开关，如果开关状态是打开generator，则生成一个单词；如果是关闭，decoder则生成一个原文单词位置的指针，然后拷贝到摘要中。
+
+• Hierarchical Encoder with Hieratchical Attention
+
 （3）提出了一个包括多句子摘要的数据集和基准
 
 * **Read-Again** "Efficient summarization with read-again and copy mechanism" **(Zeng, 2016)**
