@@ -87,6 +87,8 @@ ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解�
 * “Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond” **CoNLL (Nallapati，2016)**
 [[paper](https://arxiv.org/abs/1602.06023)]
 
+数据集：`Gigaword、CNN / DailyMail`
+
 （1）在两种不同数据集上应用seq2seq+attention的模型，得到了state-of-the-art结果。
 
 （2）根据摘要问题的特点提出了针对性的模型，结果更优。
