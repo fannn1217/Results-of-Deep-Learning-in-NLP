@@ -48,7 +48,7 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 * **NN-WE/NN-SE** “Neural Summarization by Extracting Sentences and Words” **ACL（2016）**
 [[paper](https://www.aclweb.org/anthology/P16-1046)]
 
-  数据集：`CNN / DailyMail`
+  数据集：`CNN / DailyMail（做了调整）`
 
 本文针对的任务分为sentence和word两个level的summarization。sentence level是一个序列标签问题，每个句子有0或1两个标签。而word level则是一个限定词典规模下的生成问题，词典规模限定为原文档中所有出现的词。使用的模型也比较有特点，首先在encoder端将document分为word和sentence来encode，word使用CNN encode得到句子表示，接着将句子表示输入RNN得到encoder端隐藏层状态。从word到sentence的encode体现了本文的hierarchical document encoder的概念。
 
@@ -67,7 +67,7 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 * **SummaRuNNer** “SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents” **AAAI（2017）**
 [[github](https://arxiv.org/abs/1611.04230)]
 
-  数据集：`CNN / DailyMail`
+  数据集：`CNN / DailyMail（做了调整）`
 
 提出了一个基于序列分类器的循环神经网络模型：SummaRuNNer，该模型表述简单，可解释性强，提出新的训练机制：使用生成式摘要(abstractive summary)的模式来训练抽取式任务
 
@@ -121,7 +121,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 * “Generating topic-oriented summaries using neural attention” **NAACL（2018）**
 [[reading note](https://zhuanlan.zhihu.com/p/60324533)]
 
-  数据集：`CNN / DailyMail`
+  数据集：`CNN / DailyMail（做了调整）`
 
 一篇文章可以涵盖几个topic，本文以生成针对不同主题的摘要为目标，将一篇文章与感兴趣的主题作为输入。由于缺少包含多个面向主题的文本摘要的数据集，本文从CNN / Dailymail数据集中人为构建语料。
 模型采用Pointer-Generator network。将topic vector和input embedding concat起来作为输入句。
