@@ -71,6 +71,14 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 
 提出了一个基于序列分类器的循环神经网络模型：SummaRuNNer，该模型表述简单，可解释性强，提出新的训练机制：使用生成式摘要(abstractive summary)的模式来训练抽取式任务
 
+* **RNES** “Learning to Extract Coherent Summary via Deep Reinforcement Learning” **AAAI（2018）**
+
+  数据集：`CNN / DailyMail`
+
+RNES：强化学习
+
+为了提取连贯的摘要，我们提出了一种神经连贯模型来捕捉跨句子的语义和句法连贯模式。计算两个句子的相干性，将其添加进强化学习的reward中，使输出摘要保持连贯性。
+
 ***
 
 **`Abstraction`**
