@@ -12,6 +12,10 @@
   
 * “Improving sentence compression by learning to predict gaze” **ACL（2016）**
   [[github](https://github.com/tatsuokun/sentence_compression)]
+  
+  数据集：`Google News dataset`
+  
+将eye-tracking用到压缩任务中，gaze predict和CCG标记预测是辅助训练任务
 
 * “Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains” **ACL（2017）**
   [[paper](http://www.aclweb.org/anthology/P17-1127)]
@@ -110,6 +114,12 @@ ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解�
 • Hierarchical Encoder with Hieratchical Attention
 
 （3）提出了一个包括多句子摘要的数据集和基准
+
+* **ASC** “Language as a Latent Variable: Discrete Generative Models for Sentence Compression” **EMNLP（2016）**
+
+  数据集：`Gigaword`
+  
+提出了
 
 * **Read-Again** "Efficient summarization with read-again and copy mechanism" **(Zeng, 2016)**
   [[paper](https://arxiv.org/pdf/1611.03382v1.pdf)]
