@@ -99,19 +99,19 @@ ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解�
 * “Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond” **CoNLL (Nallapati，2016)**
 [[paper](https://arxiv.org/abs/1602.06023)]
 
-数据集：`Gigaword、CNN / DailyMail`
+  数据集：`Gigaword、CNN / DailyMail`
 
 （1）在两种不同数据集上应用seq2seq+attention的模型，得到了state-of-the-art结果。
 
 （2）根据摘要问题的特点提出了针对性的模型，结果更优。
 
-• LVT词汇表限制
+    • LVT词汇表限制
 
-• 本文使用了一些额外的features，比如：词性，命名实体标签，单词的TF和IDF。将features融入到了word embedding上
+    • 本文使用了一些额外的features，比如：词性，命名实体标签，单词的TF和IDF。将features融入到了word embedding上
 
-• Switching Generator/Pointer：模型中decoder带有一个开关，如果开关状态是打开generator，则生成一个单词；如果是关闭，decoder则生成一个原文单词位置的指针，然后拷贝到摘要中。
+    • Switching Generator/Pointer：模型中decoder带有一个开关，如果开关状态是打开generator，则生成一个单词；如果是关闭，decoder则生成一个原文单词位置的指针，然后拷贝到摘要中。
 
-• Hierarchical Encoder with Hieratchical Attention
+    • Hierarchical Encoder with Hieratchical Attention
 
 （3）提出了一个包括多句子摘要的数据集和基准
 
@@ -119,7 +119,7 @@ ABS+：与 extractive 的方法结合，就有了 ABS+ 模型。即在每次解�
 
   数据集：`Gigaword`
   
-提出了
+结合pointer network，提出了auto-encoding sentence compression (ASC)，无监督模型，和supervised forced-attention sentence compression (FSC)，监督模型，将二者组合实现了半监督学习。
 
 * **Read-Again** "Efficient summarization with read-again and copy mechanism" **(Zeng, 2016)**
   [[paper](https://arxiv.org/pdf/1611.03382v1.pdf)]
