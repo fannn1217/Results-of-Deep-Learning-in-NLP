@@ -153,5 +153,11 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 一篇文章可以涵盖几个topic，本文以生成针对不同主题的摘要为目标，将一篇文章与感兴趣的主题作为输入。由于缺少包含多个面向主题的文本摘要的数据集，本文从CNN / Dailymail数据集中人为构建语料。
 模型采用Pointer-Generator network。将topic vector和input embedding concat起来作为输入句。
 
+*  “Abstractive Summarization Using Attentive Neural Techniques” **ICON（2018）**
 
+  数据集：`Gigaword`
+  
+1、使用了self-attention模型（transformer）
+
+2、提出了新的evaluation方法（vert）
 
