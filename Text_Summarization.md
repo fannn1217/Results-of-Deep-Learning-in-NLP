@@ -156,7 +156,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 ```
 
 * **Copy-net** "Incorporating Copying Mechanism in Sequence-to-Sequence Learning" **ACL（2016）**
-[[reading note](https://zhuanlan.zhihu.com/p/48959800)]
+  [[reading note](https://zhuanlan.zhihu.com/p/48959800)]
 
   数据集：`LCSTS dataset（中文微博）`
 
@@ -166,8 +166,8 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 ```
 
 * **Pointer-Generator network** “Get To The Point: Summarization with Pointer-Generator Networks” **ACL（2017）**
-[[reading note](https://zhuanlan.zhihu.com/p/27272224)]
-[[github](https://github.com/becxer/pointer-generator/)]
+  [[reading note](https://zhuanlan.zhihu.com/p/27272224)]
+  [[github](https://github.com/becxer/pointer-generator/)]
 
   数据集：`CNN / DailyMail`
   
@@ -178,7 +178,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 ```
 
 * **OperationNet** “An Operation Network for Abstractive Sentence Compression” **COLING（2018）**
-[[reading note](https://zhuanlan.zhihu.com/p/58985964)]
+  [[reading note](https://zhuanlan.zhihu.com/p/58985964)]
 
   数据集：`MSR Abstractive Text Compression Dataset`
 
@@ -188,7 +188,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 ```
 
 * “Generating topic-oriented summaries using neural attention” **NAACL（2018）**
-[[reading note](https://zhuanlan.zhihu.com/p/60324533)]
+  [[reading note](https://zhuanlan.zhihu.com/p/60324533)]
 
   数据集：`CNN / DailyMail（做了调整）`
 
@@ -197,7 +197,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 模型采用Pointer-Generator network。将topic vector和input embedding concat起来作为输入句。
 ```
 
-*  “Abstractive Summarization Using Attentive Neural Techniques” **ICON（2018）**
+* “Abstractive Summarization Using Attentive Neural Techniques” **ICON（2018）**
   
   数据集：`Gigaword`
   
@@ -209,9 +209,9 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 
 
 *  “Data-efficient Neural Text Compression with Interactive Learning” **NAACL（2019）**
-[[reading note](https://zhuanlan.zhihu.com/p/68391870)]
+  [[reading note](https://zhuanlan.zhihu.com/p/68391870)]
   
-  数据集：`Google News dataset`
+   数据集：`Google News dataset`
   
 ```
 本文提出了一种新颖的交互式设置，通过采用主动学习，将模型迁移到新的领域，减少人为监督。
