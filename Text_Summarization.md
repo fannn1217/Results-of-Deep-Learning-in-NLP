@@ -205,3 +205,18 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 
 2、提出了新的evaluation方法（vert）
 ```
+
+
+*  “Data-efficient Neural Text Compression with Interactive Learning” **NAACL（2019）**
+[[reading note](https://zhuanlan.zhihu.com/p/68391870)]
+  
+  数据集：`Google News dataset`
+```
+本文提出了一种新颖的交互式设置，通过采用主动学习，将模型迁移到新的领域，减少人为监督。
+
+本文采用主动学习（AL）策略来：
+
+（a）学习使用最小数据量的模型
+
+（b）将使用小数据集的预训练模型迁移到新领域上
+```
