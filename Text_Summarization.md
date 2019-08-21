@@ -200,6 +200,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 *  “Abstractive Summarization Using Attentive Neural Techniques” **ICON（2018）**
   
   数据集：`Gigaword`
+  
 ```
 1、使用了self-attention模型（transformer）
 
@@ -211,6 +212,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 [[reading note](https://zhuanlan.zhihu.com/p/68391870)]
   
   数据集：`Google News dataset`
+  
 ```
 本文提出了一种新颖的交互式设置，通过采用主动学习，将模型迁移到新的领域，减少人为监督。
 
