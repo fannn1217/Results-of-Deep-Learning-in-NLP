@@ -1,7 +1,7 @@
 # SoTA-of-NLP
 &spades
 
-UPDATE:19-3-29
+UPDATE:19-8
 
 State of the art  results for  machine learning problems in NLP, basically used deep learning methods.
 Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source Code, Year and Notes.
