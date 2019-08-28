@@ -83,7 +83,8 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 **`Extraction（sentence level）`**
 
 * **SummaRuNNer** “SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents” **AAAI（2017）**
-[[github](https://arxiv.org/abs/1611.04230)]
+  [[github](https://arxiv.org/abs/1611.04230)]
+  [[reading note](https://zhuanlan.zhihu.com/p/51476934)]
 
   数据集：`CNN / DailyMail（做了调整）`
 
