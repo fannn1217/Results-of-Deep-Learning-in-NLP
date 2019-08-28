@@ -40,7 +40,7 @@ Some state-of-the-art (SoTA) results, containing Paper, Datasets, Metric, Source
 
 ## Text Summarization 
 
-![image](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP-CV/blob/master/image/Text_Summarization.png)
+![image](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP-CV/blob/master/image/text_summarization.png)
 
 
 :full_moon_with_face: [Paper & Code & Note](https://github.com/fannn1217/Results-of-Deep-Learning-in-NLP/blob/master/Text_Summarization.md)
