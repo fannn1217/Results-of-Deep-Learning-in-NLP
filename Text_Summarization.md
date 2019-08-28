@@ -162,7 +162,7 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
   数据集：`LCSTS dataset（中文微博）`
 
 ```
-和Pointer-Generator Networks很像。
+和Pointer-Generator Networks很像。不同的是生成概率和复制概率在这里直接加和。
 模型包含两个部分：Generation-Mode用来根据词汇表生成词汇，然后Copy-Mode用来直接复制输入序列中的一些词。1.在词汇表上的概率分布，2.在输入序列上的概率分布，将这两部分的概率进行加和即得到最终的预测结果。
 ```
 
