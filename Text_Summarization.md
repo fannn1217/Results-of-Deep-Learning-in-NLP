@@ -102,6 +102,20 @@ RNES：强化学习
 为了提取连贯的摘要，我们提出了一种神经连贯模型来捕捉跨句子的语义和句法连贯模式。计算两个句子的相干性，将其添加进强化学习的reward中，使输出摘要保持连贯性。
 ```
 
+* “Neural Latent Extractive Document Summarization” **EMNLP（2018）**
+  [[paper](https://arxiv.org/abs/1808.07187)]
+  [[reading note](https://blog.csdn.net/qq_30219017/article/details/87926142)]
+  
+  数据集：`CNN / DailyMail`
+
+```
+LSTM + 强化学习
+
+过去的抽取式摘要技术多是把这个看作句子序列标注二分类问题或者句子排序问题。
+
+这篇论文把句子对应的label视为句子的隐变量。不是最大化每个句子到训练数据(gold label)的可能性，而是最大化生成摘要是这个人工摘要整体的可能性。
+```
+
 ***
 
 **`Abstraction`**
