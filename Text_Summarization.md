@@ -252,3 +252,34 @@ abstracter模型参照Pointer-Generator network，得到词级注意力分布
 
 （b）将使用小数据集的预训练模型迁移到新领域上
 ```
+
+***
+
+**`Unified Abstraction and Extraction`**
+
+
+* “A Unified Model for Extractive and Abstractive Summarization using Inconsistency Loss” **ACL（2018）**
+  [[code](https://github.com/HsuWanTing/unified-summarization)]
+
+  数据集：`CNN / DailyMail`
+
+```
+将abstracter和extractor（sentence level）做结合
+extractor模型参照SummaRuNNer，得到句子级别的注意力分布
+abstracter模型参照Pointer-Generator network，得到词级注意力分布
+1. 句子级别的注意力用于调整词级关注度，使得较少出现的句子中的词语不太可能被生成。 
+2. 引入了一种新颖的不一致性损失函数loss来约束两个级别的注意力之间的不一致性。sentence-level和word-level attention的共同学习：当词级注意力很高时，我们希望句子级别的注意力也很高
+```
+
+
+* **BERTSUM** “Text Summarization with Pretrained Encoders” **EMNLP（2019）**
+  [[code](https://github.com/ nlpyang/PreSumm)]
+
+  数据集：`CNN / DailyMail、NYT、XSum`
+
+```
+本文展示了BERT在文本摘要中的应用。
+1. 提取模型：建立在bert编码器之上，通过堆叠多个句子间transformer层。
+2. 生成模型：encoder：bert，decoder：Transformer。同时提出了一种新的微调时间表，它对编码器和解码器采用不同的优化器（不同lr），作为避免两者之间不匹配的手段（前者是预训练而后者不是）。
+3. Two-stage的微调方法，先在抽取微调，后在生成微调
+```
