@@ -202,6 +202,21 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
 在Pointer-Generator network的基础上，添加了delete decoder，对attention重新分布，同样是1.在词汇表上的概率分布，2.在输入序列上的概率分布，这两部分的概率加和得到最终的预测结果。
 ```
 
+
+* “A Unified Model for Extractive and Abstractive Summarization using Inconsistency Loss” **ACL（2018）**
+  [[code](https://github.com/HsuWanTing/unified-summarization)]
+
+  数据集：`CNN / DailyMail`
+
+```
+将abstracter和extractior（sentence level）做结合
+extractior模型参照SummaRuNNer，得到句子级别的注意力分布
+abstracter模型参照Pointer-Generator network，得到词级注意力分布
+1. 句子级别的注意力用于调整词级关注度，使得较少出现的句子中的词语不太可能被生成。 
+2. 引入了一种新颖的不一致性损失函数loss来约束两个级别的注意力之间的不一致性。sentence-level和word-level attention的共同学习：当词级注意力很高时，我们希望句子级别的注意力也很高
+```
+
+
 * “Generating topic-oriented summaries using neural attention” **NAACL（2018）**
   [[reading note](https://zhuanlan.zhihu.com/p/60324533)]
 
