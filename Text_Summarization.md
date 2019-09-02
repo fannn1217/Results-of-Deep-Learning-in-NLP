@@ -269,11 +269,15 @@ extractor模型参照SummaRuNNer，得到句子级别的注意力分布
 abstracter模型参照Pointer-Generator network，得到词级注意力分布
 1. 句子级别的注意力用于调整词级关注度，使得较少出现的句子中的词语不太可能被生成。 
 2. 引入了一种新颖的不一致性损失函数loss来约束两个级别的注意力之间的不一致性。sentence-level和word-level attention的共同学习：当词级注意力很高时，我们希望句子级别的注意力也很高
+两种训练方式：
+首先均预训练extractor和abstracter
+方式1. Two-stages training。抽取模型变成分类器以选择具有高关注的句子（即，句子attention>阈值）。 再简单地将抽取的句子提供给生成模型。
+方式2. End-to-end training。句子级注意力β与词级注意力αtt结合。 通过最小化四个损失函数端到端训练抽取和生成模型：L(ext)，L(abs)，L(cov)，以及方程式中的L(inc)。
 ```
 
 
 * **BERTSUM** “Text Summarization with Pretrained Encoders” **EMNLP（2019）**
-  [[code](https://github.com/ nlpyang/PreSumm)]
+  [[code](https://github.com/ nlpyang/PreSumm)]]
 
   数据集：`CNN / DailyMail、NYT、XSum`
 
