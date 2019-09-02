@@ -209,8 +209,8 @@ Encoder-decoder模型已经广泛用于sequence to sequence任务，比如机器
   数据集：`CNN / DailyMail`
 
 ```
-将abstracter和extractior（sentence level）做结合
-extractior模型参照SummaRuNNer，得到句子级别的注意力分布
+将abstracter和extractor（sentence level）做结合
+extractor模型参照SummaRuNNer，得到句子级别的注意力分布
 abstracter模型参照Pointer-Generator network，得到词级注意力分布
 1. 句子级别的注意力用于调整词级关注度，使得较少出现的句子中的词语不太可能被生成。 
 2. 引入了一种新颖的不一致性损失函数loss来约束两个级别的注意力之间的不一致性。sentence-level和word-level attention的共同学习：当词级注意力很高时，我们希望句子级别的注意力也很高
