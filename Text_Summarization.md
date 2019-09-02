@@ -277,7 +277,7 @@ abstracter模型参照Pointer-Generator network，得到词级注意力分布
 
 
 * **BERTSUM** “Text Summarization with Pretrained Encoders” **EMNLP（2019）**
-  [[code](https://github.com/ nlpyang/PreSumm)]]
+  [[code](https://github.com/nlpyang/PreSumm)]
 
   数据集：`CNN / DailyMail、NYT、XSum`
 
