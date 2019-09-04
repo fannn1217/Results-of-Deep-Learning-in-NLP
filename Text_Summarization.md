@@ -116,6 +116,17 @@ LSTM + 强化学习
 这篇论文把句子对应的label视为句子的隐变量。不是最大化每个句子到训练数据(gold label)的可能性，而是最大化生成摘要是这个人工摘要整体的可能性。
 ```
 
+* **SWAP-NET** “Extractive Summarization with SWAP-NET: Sentences and Words from Alternating Pointer Networks” **ACL（2018）**
+  [[paper](https://www.aclweb.org/anthology/P18-1014/)]
+
+  数据集：`CNN / DailyMail`（使用此数据集的匿名版本，来自Cheng和Lapata（2016），其中包含用于训练的重要句子标签；使用RAKE（一种无监督的关键词提取方法）从每个gold摘要中提取关键词）
+
+```
+SWAP-NET使用一个新的基于两级pointer-network的架构来模拟关键词和关键句子的交互。 
+
+SWAP-NET识别输入文档中的关键句子和关键词，然后将它们组合起来形成提取摘要。
+```
+
 ***
 
 **`Abstraction`**
