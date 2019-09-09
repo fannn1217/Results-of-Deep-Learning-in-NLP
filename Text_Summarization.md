@@ -78,6 +78,26 @@ Pointer Networks预测的时候每一步都找当前输入序列中权重最大�
 为了弥补语料的缺乏问题，本文采用DAE作为策略，构建端到端的无监督模型，专注抽取式方法。
 ```
 
+* **JECS** “Neural Extractive Text Summarization with Syntactic Compression” **EMNLP（2019）**
+  [[github](https://github.com/jiacheng-xu/neu-compression-sum)]
+  
+  数据集：`CNN / DailyMail、NYT`
+
+```
+Model：
+1. 编码句子、文档（lstm+cnn）进行句子级别的extraction，类似pointer network的方式
+2. 对extract的句子进行句子压缩。根据规则和解析结果得到每个句子中可压缩的短语，句子压缩模块评估可压缩的选项，并决定是否删除。
+   句子压缩：ELMO作为encoder，对选项二分类决定是否删除。
+3. 后处理：删除在其他地方出现过的完全一致的压缩短语
+
+Training：
+数据集：构建Oracle Label
+
+Analysis：
+
+
+```
+
 ***
 
 **`Extraction（sentence level）`**
