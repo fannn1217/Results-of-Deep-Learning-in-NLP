@@ -160,6 +160,19 @@ SWAP-NET识别输入文档中的关键句子和关键词，然后将它们组合
 优化目标：KL散度
 ```
 
+* **HIBERT** “HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization” **ACL（2019）**
+
+  数据集：`CNN / DailyMail`
+
+```
+两层transformer进行文档编码，并在使用标记数据预训练encoder（完形填空任务cloze）
+
+实验分为三阶段：
+1. 开放域预训练（mask）（encoder+decoder）
+2. 目标数据集预训练（mask）（encoder+decoder）
+3. 目标数据集fine-tune（摘要）（encoder+序列标注）
+```
+
 ***
 
 **`Abstraction`**
