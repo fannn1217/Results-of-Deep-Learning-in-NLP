@@ -105,7 +105,7 @@ Analysis：
 **`Extraction（sentence level）`**
 
 * **SummaRuNNer** “SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents” **AAAI（2017）**
-  [[github](https://arxiv.org/abs/1611.04230)]
+  [[paper](https://arxiv.org/abs/1611.04230)]
   [[reading note](https://zhuanlan.zhihu.com/p/51476934)]
 
   数据集：`CNN / DailyMail（做了调整）`
@@ -147,6 +147,17 @@ LSTM + 强化学习
 SWAP-NET使用一个新的基于两级pointer-network的架构来模拟关键词和关键句子的交互。 
 
 SWAP-NET识别输入文档中的关键句子和关键词，然后将它们组合起来形成提取摘要。
+```
+
+* **NEUSUM** “Neural Document Summarization by Jointly Learning to Score and Select Sentences” **ACL（2018）**
+  [[github](https://res.qyzhou.me)]
+
+  数据集：`CNN / DailyMail`
+
+```
+联合学习评分和选择句子，首先使用分层编码器读取文档句子，然后通过逐句提取句子来构建摘要。
+根据之前时间步抽取的句子，对剩余句子评分，确定抽取的下一个句子。每抽取一个句子，就把此句子从呆抽取的集合中去掉。
+优化目标：KL散度
 ```
 
 ***
