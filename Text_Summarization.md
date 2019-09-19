@@ -160,6 +160,19 @@ SWAP-NET识别输入文档中的关键句子和关键词，然后将它们组合
 优化目标：KL散度
 ```
 
+* **SUMO** “Single Document Summarization as Tree Induction” **NAACL（2019）**
+
+  数据集：`CNN / DailyMail、NYT`
+
+```
+生成摘要时诱导生成多根依赖树，其中每个根节点都是一个摘要句子。
+设计了一种新的迭代结构细化算法，该算法通过重复细化先前迭代预测的树来学习诱导文档级结构，并允许模型推断出超出简单父子关系的复杂树。
+Iterative Structure Refinement：
+1. 将初始句子表示而不是前一层的句子嵌入vk-1作为下一层的输入。
+2. 使用最后一次迭代的输出计算最终概率
+```
+
+
 * **HIBERT** “HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization” **ACL（2019）**
 
   数据集：`CNN / DailyMail`
@@ -172,6 +185,7 @@ SWAP-NET识别输入文档中的关键句子和关键词，然后将它们组合
 2. 目标数据集预训练（mask）（encoder+decoder）
 3. 目标数据集fine-tune（摘要）（encoder+序列标注）
 ```
+
 
 ***
 
