@@ -34,3 +34,6 @@ Probing Tasks类的论文，对于当前流行的预训练词向量CWRs成果进
 2、在contextualizers中，每层的可迁移性为何不同？
 
 3、预训练任务的选择如何影响向量的学习？
+
+* **TALK** “预训练语言模型研究进展和趋势展望”, an invited talk at **全国计算语言学大会（CCL2020）**
+  [[link](https://liuquncn.github.io/talks/20201031-CCL/pre-trained-langauge-models-research-advances-and-prospectives.pdf)]
